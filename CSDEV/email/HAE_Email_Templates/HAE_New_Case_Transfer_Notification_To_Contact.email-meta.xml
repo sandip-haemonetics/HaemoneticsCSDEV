@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HAE: When a case status is transferred to  Internal Team &amp; a new case is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>HAE_Letterhead</letterhead>
+    <name>HAE New Case Transfer Notification To Contact</name>
+    <style>freeForm</style>
+    <subject>Case [{!Case.CaseNumber}] has been transferred to [{!Case.HAE_Team__c}] team.</subject>
+    <textOnly>Dear {!Case.Contact}, 
+
+Your request with Case Number  [{!Case.Parent}] has been transferred to the [{!Case.HAE_Team__c}] team and a new case has been created. The new case number is [{!Case.CaseNumber}]. Please use this for all future reference.
+
+Thanks,
+
+Customer Services Team,
+Haemonetics Corporation</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

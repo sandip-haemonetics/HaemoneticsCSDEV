@@ -1,0 +1,17 @@
+<!--
+    NAME : HAE_ChangeRecordType
+    Description : This lightning web component provides the ability to change the record type for case record.
+-->
+<template>
+    <lightning-card title={label.CHANGE_RECORD_TYPE}>
+        <lightning-button slot="actions" label={label.CHANGE_RECORD_TYPE_BTN} title="Change"
+            onclick={handleUpdateRecordType} disabled={disableNxtBtn}></lightning-button>
+        <div class="slds-scrollable_y slds-p-horizontal_small" style="height:4rem;">
+            <lightning-radio-group name="caserecordtypes" options={options} value={value}
+                onchange={handleRecordTypeChange} type="radio"></lightning-radio-group>
+        </div>
+        <template if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading..." size="small" variant="brand"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>

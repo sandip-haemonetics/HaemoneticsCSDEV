@@ -1,0 +1,116 @@
+<!--
+    NAME : HAE_ProductView
+    Description : This lightning web component provides the searching mechanism for products.
+-->
+<template>
+    <lightning-card>
+        <div>
+            <lightning-accordion allow-multiple-sections-open onsectiontoggle={handleMainSectionToggle}>
+                <lightning-accordion-section name="productSec" label={label.Product}>
+                    <div>
+                        <lightning-layout multiple-rows="true" vertical-align="end">
+                            <lightning-layout-item size="12" large-device-size="9" padding="around-small">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control" onkeyup={handleKeyUp}>
+                                        <lightning-input name="enter-search" type="search" variant="label-hidden"
+                                            value={queryTerm} onchange={handleKeyUp}>
+                                        </lightning-input>
+                                    </div>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="12" large-device-size="3" padding="around-small">
+                                <lightning-button label={label.Search} variant="brand" onclick={handleSearch}>
+                                </lightning-button>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                        <template if:true={noRecords}>
+                            <div class="slds-p-around_x-small">
+                                <div class="slds-text-color_error" style="font-size:10px;">{label.No_Records}</div>
+                            </div>
+                        </template>
+                    </div>
+                    <template if:true={displayResults}>
+                        <div class="slds-p-around_x-small outerWindowStyle">
+                            <div class="slds-scrollable_y innerWindowStyle">
+                                <template for:each={productList} for:item="product">
+                                    <div key={product.Id} class="slds-p-bottom_x-small">
+                                        <div class="slds-p-around_x-small inner_innerWindowStyle">
+                                            <h2><b>{product.Name}</b></h2>
+                                            <lightning-record-view-form record-id={product.Id}
+                                                object-api-name="Product2">
+                                                <lightning-layout multiple-rows="true" vertical-align="end">
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Status}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Business_Unit}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                </lightning-layout>
+                                                <lightning-layout multiple-rows="true" vertical-align="end">
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Substitute_Item}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Replacement_Item}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                </lightning-layout>
+                                                <lightning-layout multiple-rows="true" vertical-align="end">
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Availability_Status}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Estimated_Date_of_Recovery}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                </lightning-layout>
+                                                <lightning-layout multiple-rows="true" vertical-align="end">
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Case_Weight}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Case_Height_inches}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                </lightning-layout>
+                                                <lightning-layout multiple-rows="true" vertical-align="end">
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Case_Width_inches}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item size="12" large-device-size="6"
+                                                        padding="around-small">
+                                                        <lightning-output-field field-name={label.Product_Case_Length_inches}>
+                                                        </lightning-output-field>
+                                                    </lightning-layout-item>
+                                                </lightning-layout>
+                                            </lightning-record-view-form>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </lightning-accordion-section>
+            </lightning-accordion>
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading..." size="small" variant="brand">
+                </lightning-spinner>
+            </template>
+        </div>
+    </lightning-card>
+</template>

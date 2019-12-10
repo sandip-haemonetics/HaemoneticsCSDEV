@@ -1,0 +1,12 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif" style=""><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);">Dear </span></font><font style="font-size: 12pt; background-color: rgb(255, 255, 255);">{!Case.SuppliedName}</font><span style="font-size: 12pt; background-color: rgb(255, 255, 255);">,</span><font face="Arial, sans-serif" style=""><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);">
+
+The case with Case Number </span><span style="background-color: rgb(255, 255, 255);">[</span><span style="background-color: rgb(255, 255, 255);">{!Case.CaseNumber}</span><span style="background-color: rgb(255, 255, 255);">]&nbsp;</span><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);">has been closed since there was no response for the past 5 days. In case you want to reopen a case please drop an email to the customer services team
+<br></span></font><div><font face="Arial, sans-serif" style=""><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);"><br></span></font></div><div><font face="Arial, sans-serif" style=""><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);">
+Thanks,</span></font><div><font face="Arial, sans-serif" style=""><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);">
+Customer Services Team,</span></font></div><div><font face="Arial, sans-serif" style=""><span style="white-space: pre-wrap; background-color: rgb(255, 255, 255);">
+Haemonetics Corporation </span></font></div></div>]]></td>
+</tr>
+</table>

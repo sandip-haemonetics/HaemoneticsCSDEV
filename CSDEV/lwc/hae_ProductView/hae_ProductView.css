@@ -1,0 +1,9 @@
+.outerWindowStyle{
+    height:300px;
+}
+.innerWindowStyle{
+    height:280px;
+}
+.inner_innerWindowStyle{
+    background-color:rgb(243, 242, 242);
+}

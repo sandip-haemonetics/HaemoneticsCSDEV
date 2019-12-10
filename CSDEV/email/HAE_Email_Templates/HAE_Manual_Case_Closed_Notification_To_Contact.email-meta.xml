@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HAE: When a case status is changed to &apos;Closed&apos; for manual case closure.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>HAE_Letterhead</letterhead>
+    <name>HAE Manual Case Closed Notification To Contact</name>
+    <style>freeForm</style>
+    <subject>Case [{!Case.CaseNumber}] has been closed</subject>
+    <textOnly>Dear  {!Case.Contact},
+
+The case with Case Number [{!Case.CaseNumber}] has been closed. Please rate your experience on a scale of 1 to 5 (1 is poor and 5 is very good) by replying to this mail.
+
+
+
+Thanks,
+
+Customer Services Team,
+
+Haemonetics Corporation</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

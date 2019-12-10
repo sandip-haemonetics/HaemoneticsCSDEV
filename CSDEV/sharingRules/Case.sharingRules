@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_ANZ_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS ANZ&gt; public group when it&apos;s Case Group is set as &lt;CS ANZ&gt;.</description>
+        <label>HAE Case Record Access To CS ANZ Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_ANZ</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS ANZ</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_AT_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS AT&gt; public group when it&apos;s Case Group is set as &lt;CS AT&gt;.</description>
+        <label>HAE Case Record Access To CS AT Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_AT</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS AT</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_BE_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS BE&gt; public group when it&apos;s Case Group is set as &lt;CS BE&gt;.</description>
+        <label>HAE Case Record Access To CS BE Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_BE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS BE</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_CH_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS CH&gt; public group when it&apos;s Case Group is set as &lt;CS CH&gt;.</description>
+        <label>HAE Case Record Access To CS CH Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_CH</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS CH</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_CZ_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS CZ&gt; public group when it&apos;s Case Group is set as &lt;CS CZ&gt;.</description>
+        <label>HAE Case Record Access To CS CZ Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_CZ</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS CZ</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_DE_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS DE&gt; public group when it&apos;s Case Group is set as &lt;CS DE&gt;.</description>
+        <label>HAE Case Record Access To CS DE Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_DE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS DE</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_FR_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS FR&gt; public group when it&apos;s Case Group is set as &lt;CS FR&gt;.</description>
+        <label>HAE Case Record Access To CS FR Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_FR</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS FR</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_GHXEU_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS GHXEU&gt; public group when it&apos;s Case Group is set as &lt;CS GHXEU&gt;.</description>
+        <label>HAE Case Record Access To CS GHXEU Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_GHXEU</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS GHXEU</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_GHXNA_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS GHXNA&gt; public group when it&apos;s Case Group is set as &lt;CS GHXNA&gt;</description>
+        <label>HAE Case Record Access To CS GHXNA Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_GHXNA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS GHXNA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_HUCZ_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS HUCZ&gt; public group when it&apos;s Case Group is set as &lt;CS HUCZ&gt;.</description>
+        <label>HAE Case Record Access To CS HUCZ Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_HUCZ</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS HUCZ</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_IT_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS IT&gt; public group when it&apos;s Case Group is set as &lt;CS IT&gt;.</description>
+        <label>HAE Case Record Access To CS IT Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_IT</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS IT</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_NA_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS NA&gt; public group when it&apos;s Case Group is set as &lt;CS NA&gt;.</description>
+        <label>HAE Case Record Access To CS NA Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_NA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS NA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_NL_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS NL&gt; public group when it&apos;s Case Group is set as &lt;CS NL&gt;.</description>
+        <label>HAE Case Record Access To CS NL Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_NL</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS NL</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_Plasma_NA_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS Plasma NA&gt; public group when it&apos;s Case Group is set as &lt;CS Plasma NA&gt;.</description>
+        <label>HAE Case Record Access To CS Plasma NA Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_Plasma_NA</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS Plasma NA</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_CS_UK_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;CS UK&gt; public group when it&apos;s Case Group is set as &lt;CS UK&gt;.</description>
+        <label>HAE Case Record Access To CS UK Public Group</label>
+        <sharedTo>
+            <group>HAE_CS_UK</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>CS UK</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_Contracts_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;Contracts&gt; public group when it&apos;s Case Group is set as &lt;Contracts&gt;.</description>
+        <label>HAE Case Record Access To Contracts Public Group</label>
+        <sharedTo>
+            <group>HAE_Contracts</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>Contracts</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_Internal_Departments_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;Internal Departments&gt; public group when it&apos;s Case Group is set as &lt;Internal Departments&gt;.</description>
+        <label>HAE Case Record Access To Internal Departments Public Group</label>
+        <sharedTo>
+            <group>HAE_Internal_Departments</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>Internal Departments</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_Product_Support_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;Product Support&gt; public group when it&apos;s Case Group is set as &lt;Product Support&gt;.</description>
+        <label>HAE Case Record Access To Product Support Public Group</label>
+        <sharedTo>
+            <group>HAE_Product_Support</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>Product Support</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_Software_Support_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;Software Support&gt; public group when it&apos;s Case Group is set as &lt;Software Support&gt;.</description>
+        <label>HAE Case Record Access To Software Support Public Group</label>
+        <sharedTo>
+            <group>HAE_Software_Support</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>Software Support</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_ANZ_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS ANZ&gt; public group when it&apos;s Case Group is set as &lt;TS ANZ&gt;.</description>
+        <label>HAE Case Record Access To TS ANZ Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_ANZ</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS ANZ</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_AT_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS AT&gt; public group when it&apos;s Case Group is set as &lt;TS AT&gt;.</description>
+        <label>HAE Case Record Access To TS AT Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_AT</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS AT</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_BE_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS BE&gt; public group when it&apos;s Case Group is set as &lt;TS BE&gt;.</description>
+        <label>HAE Case Record Access To TS BE Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_BE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS BE</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_CH_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS CH&gt; public group when it&apos;s Case Group is set as &lt;TS CH&gt;.</description>
+        <label>HAE Case Record Access To TS CH Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_CH</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS CH</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_CZ_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS CZ&gt; public group when it&apos;s Case Group is set as &lt;TS CZ&gt;.</description>
+        <label>HAE Case Record Access To TS CZ Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_CZ</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS CZ</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_DACHCZ_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS DACHCZ&gt; public group when it&apos;s Case Group is set as &lt;TS DACHCZ&gt;.</description>
+        <label>HAE Case Record Access To TS DACHCZ Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_DACHCZ</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS DACHCZ</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_DE_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS DE&gt; public group when it&apos;s Case Group is set as &lt;TS DE&gt;.</description>
+        <label>HAE Case Record Access To TS DE Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_DE</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS DE</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_FR_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS FR&gt; public group when it&apos;s Case Group is set as &lt;TS FR&gt;.</description>
+        <label>HAE Case Record Access To TS FR Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_FR</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS FR</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_IT_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS IT&gt; public group when it&apos;s Case Group is set as &lt;TS IT&gt;.</description>
+        <label>HAE Case Record Access To TS IT Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_IT</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS IT</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_NL_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS NL&gt; public group when it&apos;s Case Group is set as &lt;TS NL&gt;.</description>
+        <label>HAE Case Record Access To TS NL Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_NL</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS NL</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>HAE_Case_Record_Access_To_TS_UK_Public_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>HAE: This rule is responsible to given record access to &lt;TS UK&gt; public group when it&apos;s Case Group is set as &lt;TS UK&gt;.</description>
+        <label>HAE Case Record Access To TS UK Public Group</label>
+        <sharedTo>
+            <group>HAE_TS_UK</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>HAE_Case_Group__c</field>
+            <operation>equals</operation>
+            <value>TS UK</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

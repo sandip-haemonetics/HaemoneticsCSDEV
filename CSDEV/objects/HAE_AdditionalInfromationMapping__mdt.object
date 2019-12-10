@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>HAE:</description>
+    <fields>
+        <fullName>HAE_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>HAE:</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Category__c</fullName>
+        <description>HAE: This field denotes the category of the case.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Category</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Record_Type_Name__c</fullName>
+        <description>HAE:</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Record Type Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_FieldSet_API_Name__c</fullName>
+        <description>HAE: This field denotes the fieldset for the selected case category.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>FieldSet API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>AdditionalInfromationMapping</label>
+    <pluralLabel>AdditionalInfromationMappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

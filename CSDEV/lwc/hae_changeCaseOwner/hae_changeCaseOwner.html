@@ -1,0 +1,18 @@
+<!--
+       @name: hae_changeCaseOwner
+       @description: to show the group members based on logged-in user
+       @date: 25thNov, 19
+-->
+<template>    
+       <p class="slds-m-top_medium">
+           <lightning-combobox
+                    name="userselection"
+                    label="Change Owner"
+                    value=""
+                    placeholder="Select User"
+                    options={users.data}
+                    onchange={handleChange}>
+            </lightning-combobox>
+            <lightning-button variant="brand" label="Save" title="Save" onclick={updateCase} disabled={disableButton} class="slds-m-top_medium slds-float_right"></lightning-button>
+       </p>      
+</template>

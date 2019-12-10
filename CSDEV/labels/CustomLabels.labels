@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CS_Account_Manager</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Account Manager</shortDescription>
+        <value>CS Account Manager</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Additional_Fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Additional Fields</shortDescription>
+        <value>Additional Fields</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CASE_PRIORITY_HIGH</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CASE_PRIORITY_HIGH</shortDescription>
+        <value>High</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CASE_PRIORITY_LOW</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CASE_PRIORITY_LOW</shortDescription>
+        <value>Low</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CASE_PRIORITY_MEDIUM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CASE_PRIORITY_MEDIUM</shortDescription>
+        <value>Medium</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CS_NA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS NA</shortDescription>
+        <value>CS NA</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CS_OrdersNA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS OrdersNA</shortDescription>
+        <value>CS Orders NA</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Group_CS_NA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Group CS NA</shortDescription>
+        <value>CS NA</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Group_Contracts</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Group_Contracts</shortDescription>
+        <value>Contracts</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Group_Product_Support</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Group_Product_Support</shortDescription>
+        <value>Product Support</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Group_Software_Support</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Group_Software_Support</shortDescription>
+        <value>Software Support</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Inquiry_To_Order_Priority</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Inquiry To Order Priority</shortDescription>
+        <value>High</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Origin_Email_Type</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Origin_Email_Type</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Record_Types</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Record Types</shortDescription>
+        <value>Case Record Types</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Reopen_On_Closed_Status_Message</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Reopen_On_Closed_Status_Message</shortDescription>
+        <value>You can not reopen this case because it cross 10 days of it Closed Date.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Reopen_Reason_System_Message</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Reopen_Reason_System_Message</shortDescription>
+        <value>Response received from customer.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Team_Contracts</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Team_Contracts</shortDescription>
+        <value>Contracts</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Team_Product_Support</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Team_Product_Support</shortDescription>
+        <value>Product Support</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Team_Software_Support</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Case_Team_Software_Support</shortDescription>
+        <value>Software Support</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Change</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change</shortDescription>
+        <value>Change</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Closed_Case_Status</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Closed_Case_Status</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Common_Exception_Message</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Common_Exception_Message</shortDescription>
+        <value>Exception :</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Customer_Service</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Service</shortDescription>
+        <value>Customer Service</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Customer_Service_Claims</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Service: Claims</shortDescription>
+        <value>Customer Service: Claims</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Customer_Service_Inquiry</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Service Inquiry</shortDescription>
+        <value>Customer Service: Inquiry</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Customer_Service_Order</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Service Order</shortDescription>
+        <value>Customer Service: Order</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message</shortDescription>
+        <value>Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_GX_Account_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GX Account Name</shortDescription>
+        <value>Webmethods Haemonetics</value>
+    </labels>
+    <labels>
+        <fullName>HAE_GX_Contact_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GX Contact Name</shortDescription>
+        <value>Webmethods Haemonetics</value>
+    </labels>
+    <labels>
+        <fullName>HAE_GX_INTEGRATION_SERVER_EMAIL</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GX_INTEGRATION_SERVER_EMAIL</shortDescription>
+        <value>Integration-Server@HAEWEBMMT101.haemo.net,santanu.pal@cognizant.com, Sulekha.Kumari2@cognizant.com</value>
+    </labels>
+    <labels>
+        <fullName>HAE_G_Fax_Kick_out</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>G-Fax Kick-out</shortDescription>
+        <value>G-Fax Kick-out</value>
+    </labels>
+    <labels>
+        <fullName>HAE_In_Progress_Case_Status</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_In_Progress_Case_Status</shortDescription>
+        <value>In Progress</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Incorrect_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Incorrect Address</shortDescription>
+        <value>Incorrect Address</value>
+    </labels>
+    <labels>
+        <fullName>HAE_LWC_Error_Title</fullName>
+        <categories>HAE LWC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Error Title</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>HAE_LWC_Shortwatch_Warning_Message</fullName>
+        <categories>HAE LWC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Shortwatch Warning Message</shortDescription>
+        <value>Case Product found in Shortwatch List.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_LWC_System_Error_Message</fullName>
+        <categories>HAE LWC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE LWC System Error Message</shortDescription>
+        <value>System Error! Please contact System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_LWC_Warning_Title</fullName>
+        <categories>HAE LWC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LWC Warning Title</shortDescription>
+        <value>Warning</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Missing_Paperwork</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Missing Paperwork</shortDescription>
+        <value>Missing Paperwork</value>
+    </labels>
+    <labels>
+        <fullName>HAE_New_Case_Status</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_New_Case_Status</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>HAE_No_Records_found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Records found</shortDescription>
+        <value>No records found.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Order_Submitted_to_GHX</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Submitted to GHX</shortDescription>
+        <value>Order Submitted to GHX</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Other</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other</shortDescription>
+        <value>Other</value>
+    </labels>
+    <labels>
+        <fullName>HAE_PO_NUMBER_FORMAT1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PO_NUMBER_FORMAT1</shortDescription>
+        <value>PO #</value>
+    </labels>
+    <labels>
+        <fullName>HAE_PO_NUMBER_FORMAT2</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PO_NUMBER_FORMAT2</shortDescription>
+        <value>PO#</value>
+    </labels>
+    <labels>
+        <fullName>HAE_PO_NUMBER_FORMAT3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PO_NUMBER_FORMAT3</shortDescription>
+        <value>PO Number</value>
+    </labels>
+    <labels>
+        <fullName>HAE_PO_NUMBER_FORMAT4</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PO_NUMBER_FORMAT4</shortDescription>
+        <value>PO Number:</value>
+    </labels>
+    <labels>
+        <fullName>HAE_PO_NUMBER_FORMAT5</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PO_NUMBER_FORMAT5</shortDescription>
+        <value>PO Number :</value>
+    </labels>
+    <labels>
+        <fullName>HAE_PO_NUMBER_FORMAT6</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PO_NUMBER_FORMAT6</shortDescription>
+        <value>PO:</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Pending_Customer_Case_Status</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Pending_Customer_Case_Status</shortDescription>
+        <value>Pending Customer</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Pending_Internal_Case_Status</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Pending_Internal_Case_Status</shortDescription>
+        <value>Pending Internal</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Please_fill_the_required_fields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please fill the required fields</shortDescription>
+        <value>Please fill the required fields</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_ANZ</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product ANZ</shortDescription>
+        <value>Product ANZ</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Availability_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Availability_Status</shortDescription>
+        <value>HAE_Availability_Status__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Business_Unit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Business_Unit</shortDescription>
+        <value>HAE_Business_Unit__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Case_Height_inches</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Case_Height_inches</shortDescription>
+        <value>HAE_Case_Height_inches__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Case_Length_inches</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Case_Length_inches</shortDescription>
+        <value>HAE_Case_Length_inches__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Case_Weight</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Case_Weight</shortDescription>
+        <value>HAE_Case_Weight__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Case_Width_inches</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Case_Width_inches</shortDescription>
+        <value>HAE_Case_Width_inches__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_EMEA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product EMEA</shortDescription>
+        <value>Product EMEA</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Estimated_Date_of_Recovery</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Estimated_Date_of_Recovery</shortDescription>
+        <value>HAE_Estimated_Date_of_Recovery__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Label</shortDescription>
+        <value>Products</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_NA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product NA</shortDescription>
+        <value>Product NA</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Replacement_Item</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Replacement_Item</shortDescription>
+        <value>HAE_Replacement_Item__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Status</shortDescription>
+        <value>Status__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Substitute_Item</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product_Substitute_Item</shortDescription>
+        <value>HAE_Substitute_Item__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Purchase_Order</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Purchase Order</shortDescription>
+        <value>Purchase Order</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Quantity_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quantity Error</shortDescription>
+        <value>Quantity Error</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Received_Case</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Received Case</shortDescription>
+        <value>Received</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Record_Type_Update_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type Update Message</shortDescription>
+        <value>Record type updated.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Region_NA</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Region_NA</shortDescription>
+        <value>NA</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Response_Received_Case_Status</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Response_Received_Case_Status</shortDescription>
+        <value>Response Received</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Search</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Warehouse</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Warehouse</shortDescription>
+        <value>Warehouse</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Wrong_Lot_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wrong Lot Number</shortDescription>
+        <value>Wrong Lot Number</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Wrong_Part_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wrong Part Number</shortDescription>
+        <value>Wrong Part Number</value>
+    </labels>
+    <labels>
+        <fullName>HAE_case_reopen_possible_on_closed_status</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_case_reopen_possible_on_closed_status</shortDescription>
+        <value>You can only reopen a Case if it Status is in Closed status.</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Case Record Types">
+        <lightning-button slot="actions" label="Change" title="Change" onclick={handleUpdateRecordType} disabled={disableNxtBtn}></lightning-button>
+                <div class="slds-scrollable_y slds-p-horizontal_small" style="height:4rem;">
+                    <lightning-radio-group name="caserecordtypes" options={options} value={value}
+                    onchange={handleRecordTypeChange} type="radio"></lightning-radio-group>                   
+                </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,8 @@
+<!--
+       @name: hae_changeCaseOwnerRedirection
+       @description: it's used for quick action to call the LWC: hae_changeCaseOwner
+       @date: 25thNov, 19
+-->
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,flexipage:availableForAllPageTypes">
+    <c:hae_changeCaseOwner recordId="{!v.recordId}"/>
+</aura:component>

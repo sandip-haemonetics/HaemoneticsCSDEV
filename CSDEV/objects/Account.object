@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>HAE_Account_Note__c</fullName>
+        <description>HAE: This is responsible to capture note and same will reflect in case(CS Account Note).</description>
+        <externalId>false</externalId>
+        <label>Account Note</label>
+        <length>130000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>HAE_Operating_Unit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>HAE: Operating Unit can be associated with multiple accounts.</description>
+        <externalId>false</externalId>
+        <label>Operating Unit</label>
+        <referenceTo>HAE_Operating_Unit__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HAE_VIP_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>HAE: This flag is responsible to decide VIP customer.</description>
+        <externalId>false</externalId>
+        <label>VIP Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>
