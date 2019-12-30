@@ -13,38 +13,28 @@
 trigger HFSL_CaseTrigger on Case (after insert, before insert, before update, before delete, after update) {
 
     
-    //Case Record Types used for Customer Service.
-    private static final String HAE_CLAIM_RECORD_TYPE = 'Customer Service: Claims';
-    private static final String HAE_GHX_RECORD_TYPE = 'Customer Service: GHX';
-    private static final String HAE_INQUIRY_RECORD_TYPE = 'Customer Service: Inquiry';
-    private static final String HAE_ORDER_RECORD_TYPE = 'Customer Service: Order';
-    private static final String HAE_SERVICE_REQUEST_RECORD_TYPE = 'Customer Service: Service Request';
-    private static final String HAE_CONTRACT_REQUEST_RECORD_TYPE = 'Customer Service: Contract Request';
-    
-    Map<ID,Schema.RecordTypeInfo> recordTypeMap = Case.sObjectType.getDescribe().getRecordTypeInfosById();
-    
     /**
-      * This method is responsible to find out the record is for Customer Service's Case Record Type or not.
-      **/
+      * This method is responsible to denote the Customer Service Case record.
+    **/
     private static boolean isRecordForCustomerService(){
-        for (Case caseIns : Trigger.new) {
-             if(recordTypeMap.get(caseIns.recordTypeID).getName().equalsIgnoreCase(HAE_CLAIM_RECORD_TYPE)
-                 || recordTypeMap.get(caseIns.recordTypeID).getName().equalsIgnoreCase(HAE_GHX_RECORD_TYPE)
-                 || recordTypeMap.get(caseIns.recordTypeID).getName().equalsIgnoreCase(HAE_INQUIRY_RECORD_TYPE)
-                 || recordTypeMap.get(caseIns.recordTypeID).getName().equalsIgnoreCase(HAE_ORDER_RECORD_TYPE)
-                 || recordTypeMap.get(caseIns.recordTypeID).getName().equalsIgnoreCase(HAE_SERVICE_REQUEST_RECORD_TYPE)
-               	 || recordTypeMap.get(caseIns.recordTypeID).getName().equalsIgnoreCase(HAE_CONTRACT_REQUEST_RECORD_TYPE)) {
-                 return true;
-             }
-        }
-        
+        if(!Trigger.isDelete){
+            for (Case caseIns : Trigger.new) {
+                if(caseIns.HAE_Customer_Service_Case__c)
+                    return true;
+            } 
+        }else{
+            for (Case caseIns : Trigger.old) {
+                if(caseIns.HAE_Customer_Service_Case__c)
+                    return true;
+            } 
+        }       
         return false;
     }
     
     /**
       * Condition to segrigate the existing logic and new logic for Customer Service based on record type selection.
       */
-    if(!Trigger.isDelete && isRecordForCustomerService()){
+    if(isRecordForCustomerService()){
         System.debug(':::::::::::::: Calling from CS module');
         //New Logic for Customer service is delegated to helper classes.
         HAE_CaseTriggerHandler.executeTrigger();  

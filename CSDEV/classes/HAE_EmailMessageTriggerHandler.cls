@@ -35,6 +35,8 @@ public with sharing class HAE_EmailMessageTriggerHandler {
     */
     private static void beforeInsert(List<EmailMessage> newEmailMessageList) {
         caseClosePostActivity(newEmailMessageList);
+        checkForSensitiveInformationAndMask(newEmailMessageList);
+         preventDuplicateCaseCreation(newEmailMessageList);
     }
     
     /**
@@ -55,7 +57,8 @@ public with sharing class HAE_EmailMessageTriggerHandler {
     * This method is responsible for performing all after insert operations.
     */
     private static void afterInsert(List<EmailMessage> newEmailMessageList, Map<id,EmailMessage> newEmailMessageMap) {          
-        caseStatusChangedBasedOnEmailMessageSendOrRecieved(newEmailMessageList);      
+        caseStatusChangedBasedOnEmailMessageSendOrRecieved(newEmailMessageList);   
+       
     }
         
     /**
@@ -208,4 +211,93 @@ public with sharing class HAE_EmailMessageTriggerHandler {
         }
         return null;
     } 
+    /**
+    * @name: checkForSensitiveInformationAndMask
+    * @param(s):	newEmailMessageList	:	List of new version of Email Messages.  	
+    * @description: This method is responsible to check and mask sensitive information in case description.
+    * @date: 10 Dec, 2019
+    **/
+    private static void checkForSensitiveInformationAndMask(List<EmailMessage> newEmailMessageList){
+        List<String> regexList = new List<String>();        
+        String encryptionPattern = System.Label.HAE_Encryption_Pattern;
+        Integer encryptionPatternLength = Integer.valueof(System.Label.HAE_Encryption_Length);
+        for(HAE_Credit_Card_Regex__mdt regex : [SELECT HAE_Regex__c, HAE_Active__c FROM HAE_Credit_Card_Regex__mdt WHERE HAE_Active__c = true] ){
+            regexList.add(regex.HAE_Regex__c);
+        }
+        if(!regexList.isEmpty()){
+            for(EmailMessage message : newEmailMessageList){
+                if (message.TextBody != null) {
+                    message.TextBody = HAE_EncodingUtils.maskString(message.TextBody, regexList, encryptionPattern, encryptionPatternLength);
+                    message.HTMLBody = HAE_EncodingUtils.maskString(message.HTMLBody, regexList, encryptionPattern, encryptionPatternLength);
+                }
+            }
+        }
+    }
+    /**
+    * @name: preventDuplicateCaseCreation
+    * @param(s):	newEmailMessageList	:	List of new version of Email Messages.  	
+    * @description: This method is responsible to prevent duplicate case creation when a CC recipient responds to the initial email from a customer.
+    * @date: 17 Dec, 2019
+    **/
+    private static void preventDuplicateCaseCreation(List<EmailMessage> newEmailMessageList){
+        
+        List<String> emailSubjectsList = new List<String>();
+        List<String> emailRESubjectsList = new List<String>();
+        List<Case> duplicateCases =  new List<Case>();
+        final String RE1 = System.Label.HAE_EmailMessage_RE_1;//RE:
+        final String RE2 = System.Label.HAE_EmailMessage_RE_2;//Re:
+        final String REF1 = System.Label.HAE_EmailMessage_REF_1;//ref:
+        final String REF2 = System.Label.HAE_EmailMessage_REF_2;//:ref
+
+        if(newEmailMessageList <> null && !newEmailMessageList.isEmpty()){
+            for(EmailMessage message : newEmailMessageList){
+                if(message.Subject <> null && ((message.Subject).startsWith(RE1) ||(message.Subject).startsWith(RE2))  && !(message.Subject).contains(REF1) && !(message.Subject).contains(REF2)){
+                    emailRESubjectsList.add(message.Subject);
+                    if((message.Subject).startsWith(RE1))
+                        emailSubjectsList.add((message.Subject).removeStart(RE1).trim());
+                    else if((message.Subject).startsWith(RE2)){
+                        emailSubjectsList.add((message.Subject).removeStart(RE2).trim());
+                    }
+                }
+                else if(message.Subject <> null && !(message.Subject).startsWith(RE1) && !(message.Subject).startsWith(RE2) && !(message.Subject).contains(REF1) && !(message.Subject).contains(REF2)){
+                    emailSubjectsList.add(message.Subject); 
+                }                  
+            }   
+
+            if(!emailRESubjectsList.isEmpty()){
+                if(!emailRESubjectsList.isEmpty()){
+                    for(Case caseRec : [SELECT Id, Subject, HAE_Duplicate__c, ParentId FROM Case WHERE Subject IN :emailRESubjectsList]){
+                        if(caseRec.HAE_Duplicate__c){
+                            duplicateCases.add(caseRec);    
+                        }    
+                    }    
+                }
+            }
+            
+            if(!emailSubjectsList.isEmpty()){
+                for(Case caseRec : [SELECT Id, Subject, HAE_Duplicate__c, ParentId FROM Case WHERE Subject IN :emailSubjectsList]){
+                    if(caseRec.HAE_Duplicate__c)
+                        duplicateCases.add(caseRec);                
+                }
+            }
+
+            for(EmailMessage message : newEmailMessageList){
+                for(Case caseRec : duplicateCases){
+                    if(caseRec.Subject.equals(message.Subject) && caseRec.ParentId <> null){
+                        message.ParentId = caseRec.ParentId;
+                    }
+                }
+
+            }
+        
+            if(duplicateCases <> null && !duplicateCases.isEmpty()){
+                try{
+                    delete duplicateCases;
+                }
+                catch(Exception ex){
+                    System.debug('Exception on Duplicate Case--->'+ex.getMessage());
+                }
+            }
+        }
+    }   
 }

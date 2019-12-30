@@ -1,0 +1,24 @@
+<!--
+       @name: hae_showAccountNotes
+       @description: to show the content notes in account & Case record page
+       @date: 25thNov, 19
+-->
+
+<template>
+    <template if:true ={contentNotes.data}>
+        <lightning-card  title="Account Notes">
+            <p class="slds-p-horizontal_small sectionStyle">        
+                <template for:each={contentNotes.data} for:item="contentNote">
+                    <div key={contentNote.Id} class="slds-m-top_small">
+                        {contentNote.TextPreview}
+                        <div class="slds-float_right slds-m-top_small">
+                            {contentNote.CreatedBy.Name} • 
+                            <lightning-formatted-date-time value={contentNote.LastModifiedDate}></lightning-formatted-date-time>
+                        </div> 
+                        <hr></hr>          
+                    </div>
+                </template>
+            </p>
+        </lightning-card>
+    </template>
+</template>

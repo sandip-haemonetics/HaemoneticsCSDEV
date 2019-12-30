@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>HAE: This is used to store regex information for different types of credit cards.</description>
+    <fields>
+        <fullName>HAE_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>HAE: This field is used to denote if the current record is active or not.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HAE_Regex__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>HAE: to define the Regex functions for different type of Credit Cards just like AMEX, MASTER, VISA etc.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Regex</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Credit Card Regex</label>
+    <pluralLabel>Credit Card Regex</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

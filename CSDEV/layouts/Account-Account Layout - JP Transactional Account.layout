@@ -3,8 +3,7 @@
     <customButtons>H_C_View_Hierarchy_tree</customButtons>
     <customButtons>Rolling_12_whole_customer</customButtons>
     <customButtons>Rolling_12_SFDC</customButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
-    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
+    <excludeButtons>DataDotComAccountInsights</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -80,10 +79,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>HAE_Operating_Unit__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>HAE_Account_Note__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

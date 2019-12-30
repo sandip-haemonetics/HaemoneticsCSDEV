@@ -6,10 +6,14 @@
         <members>HAE_CaseQueueMemberSelectionController</members>
         <members>HAE_CaseTriggerHandler</members>
         <members>HAE_CategoryBasedSelectionController</members>
+        <members>HAE_ContentDocumentUtility</members>
         <members>HAE_EmailMessageTriggerHandler</members>
+        <members>HAE_EncodingUtils</members>
         <members>HAE_FieldSetUtils</members>
         <members>HAE_RecordTypeChangeController</members>
         <members>HAE_SearchProducts</members>
+        <members>HAE_ShowAccountNotesController</members>
+        <members>HAE_ShowAccountTeamMembers</members>
         <members>HAE_UserOperatingUnitTriggerHandler</members>
         <name>ApexClass</name>
     </types>
@@ -21,17 +25,25 @@
         <name>ApexTrigger</name>
     </types>
     <types>
+        <members>hae_callSetCaseEscalation</members>
         <members>hae_changeCaseOwnerRedirection</members>
+        <members>hae_showSalesRepRedirection</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
         <members>Case.HAE Customer Service%3A Service Request</members>
         <members>Case.HAE Support Process Customer Service%3A Claims</members>
         <members>Case.HAE Support Process Customer Service%3A Contract Request</members>
+        <members>Case.HAE Support Process Customer Service%3A Contracts</members>
+        <members>Case.HAE Support Process Customer Service%3A ERF</members>
         <members>Case.HAE Support Process Customer Service%3A GHX</members>
         <members>Case.HAE Support Process Customer Service%3A Inquiry</members>
         <members>Case.HAE Support Process Customer Service%3A Order</members>
         <name>BusinessProcess</name>
+    </types>
+    <types>
+        <members>Case.Customer_Service</members>
+        <name>CompactLayout</name>
     </types>
     <types>
         <members>Haemonetics300x73</members>
@@ -39,13 +51,13 @@
         <name>ContentAsset</name>
     </types>
     <types>
-        <members>HAE_Customer_Service</members>
         <members>HAE_Customer_Service_Console</members>
         <name>CustomApplication</name>
     </types>
     <types>
         <members>Account.HAE_Account_Note__c</members>
         <members>Account.HAE_Operating_Unit__c</members>
+        <members>Account.HAE_Region__c</members>
         <members>Account.HAE_VIP_Customer__c</members>
         <members>Case.Case_Business_Unit__c</members>
         <members>Case.Category__c</members>
@@ -62,6 +74,7 @@
         <members>Case.HAE_Audit_Flag__c</members>
         <members>Case.HAE_Bill_To_Account__c</members>
         <members>Case.HAE_Bill_To_Address__c</members>
+        <members>Case.HAE_Capture_Escalate_Date__c</members>
         <members>Case.HAE_Case_Currency__c</members>
         <members>Case.HAE_Case_Group__c</members>
         <members>Case.HAE_Case_RecordType_Developer_Name__c</members>
@@ -73,26 +86,34 @@
         <members>Case.HAE_Contract_Request_Customer_Number__c</members>
         <members>Case.HAE_Contract_Request__c</members>
         <members>Case.HAE_Contract_User__c</members>
+        <members>Case.HAE_Contracts_Initiated_On__c</members>
         <members>Case.HAE_Correction_Type__c</members>
         <members>Case.HAE_Customer_Number__c</members>
+        <members>Case.HAE_Customer_Requested_Date__c</members>
+        <members>Case.HAE_Customer_Service_Case__c</members>
         <members>Case.HAE_Delivery_Number__c</members>
         <members>Case.HAE_Document_Type__c</members>
+        <members>Case.HAE_Duplicate__c</members>
+        <members>Case.HAE_ERF_Ship_From_Account__c</members>
+        <members>Case.HAE_ERF_Ship_To_Account__c</members>
+        <members>Case.HAE_ERF__c</members>
         <members>Case.HAE_ETA__c</members>
         <members>Case.HAE_Entered_Reason__c</members>
         <members>Case.HAE_Error_Reason__c</members>
         <members>Case.HAE_Expected_Delivery_Address__c</members>
         <members>Case.HAE_Feedback__c</members>
         <members>Case.HAE_First_Time_Case_Queue_Owner__c</members>
-        <members>Case.HAE_Freight_Forwarders__c</members>
         <members>Case.HAE_Function__c</members>
         <members>Case.HAE_G_Fax_Kick_out_Reason__c</members>
         <members>Case.HAE_Hold_Reason__c</members>
         <members>Case.HAE_Incident_Date__c</members>
+        <members>Case.HAE_Initial_Case_Owner_Group__c</members>
         <members>Case.HAE_Invoice_Number__c</members>
         <members>Case.HAE_Is_Case_Transferred_From_Here__c</members>
         <members>Case.HAE_Is_Conflict_Case__c</members>
         <members>Case.HAE_Is_Transferred_Case__c</members>
-        <members>Case.HAE_Issue__c</members>
+        <members>Case.HAE_Issue_Category__c</members>
+        <members>Case.HAE_Issue_Description__c</members>
         <members>Case.HAE_Item__c</members>
         <members>Case.HAE_Kickout_Reason__c</members>
         <members>Case.HAE_Lot_Number_Expected__c</members>
@@ -110,6 +131,7 @@
         <members>Case.HAE_Qty_Received__c</members>
         <members>Case.HAE_Qty__c</members>
         <members>Case.HAE_Reason__c</members>
+        <members>Case.HAE_Record_Type_Developer_Name__c</members>
         <members>Case.HAE_Region2__c</members>
         <members>Case.HAE_Region__c</members>
         <members>Case.HAE_Reopen_Reason__c</members>
@@ -118,15 +140,20 @@
         <members>Case.HAE_Required_Delivery_Date__c</members>
         <members>Case.HAE_Review_Status__c</members>
         <members>Case.HAE_Review_Type__c</members>
+        <members>Case.HAE_SLA_Breach_Date__c</members>
+        <members>Case.HAE_SLA_Breach__c</members>
         <members>Case.HAE_SO_Number__c</members>
         <members>Case.HAE_Sales_Order_Number__c</members>
+        <members>Case.HAE_Sales_Rep__c</members>
         <members>Case.HAE_Sender_Email__c</members>
+        <members>Case.HAE_Sensitive__c</members>
         <members>Case.HAE_Service_Providers__c</members>
         <members>Case.HAE_Ship_To_Account__c</members>
         <members>Case.HAE_Ship_To_Address__c</members>
         <members>Case.HAE_Team__c</members>
         <members>Case.HAE_Total_Cost__c</members>
         <members>Case.HAE_Tracking_Number__c</members>
+        <members>Case.HAE_Transfer_Contracts__c</members>
         <members>Case.HAE_UOM__c</members>
         <members>Case.HAE_Warehouse__c</members>
         <members>Case.IsEscalated</members>
@@ -135,17 +162,11 @@
         <members>Case.Priority</members>
         <members>Case.Status</members>
         <members>Case.Subject</members>
+        <members>Knowledge__kav.HAE_Content_Description__c</members>
+        <members>Knowledge__kav.HAE_Products_s__c</members>
+        <members>Knowledge__kav.HAE_Region__c</members>
+        <members>Knowledge__kav.HAE_Type__c</members>
         <members>Product2.Account__c</members>
-        <members>Product2.HAE_Availability_Status__c</members>
-        <members>Product2.HAE_Business_Unit__c</members>
-        <members>Product2.HAE_Case_Height_inches__c</members>
-        <members>Product2.HAE_Case_Length_inches__c</members>
-        <members>Product2.HAE_Case_Weight__c</members>
-        <members>Product2.HAE_Case_Width_inches__c</members>
-        <members>Product2.HAE_Customer_Communication__c</members>
-        <members>Product2.HAE_Estimated_Date_of_Recovery__c</members>
-        <members>Product2.HAE_Product_Notes__c</members>
-        <members>Product2.HAE_Replacement_Item__c</members>
         <members>Product2.HAE_Substitute_Item__c</members>
         <members>Product2.Status__c</members>
         <members>Task.Subject</members>
@@ -154,44 +175,78 @@
     <types>
         <members>CS_Account_Manager</members>
         <members>HAE_Additional_Fields</members>
+        <members>HAE_Bill_To</members>
         <members>HAE_CASE_PRIORITY_HIGH</members>
         <members>HAE_CASE_PRIORITY_LOW</members>
         <members>HAE_CASE_PRIORITY_MEDIUM</members>
+        <members>HAE_CS_CR_Default_Category</members>
+        <members>HAE_CS_CR_Default_Status</members>
+        <members>HAE_CS_Contract_Request_Record_Type_Name</members>
+        <members>HAE_CS_ContractsCaseValidationMsg</members>
+        <members>HAE_CS_Contracts_Record_Type_Name</members>
         <members>HAE_CS_NA</members>
         <members>HAE_CS_OrdersNA</members>
+        <members>HAE_Case_Category_Credit_Request</members>
+        <members>HAE_Case_Category_Order_Submitted_to_GHX</members>
+        <members>HAE_Case_Category_Status_For_Contract_Hours</members>
         <members>HAE_Case_Group_CS_NA</members>
         <members>HAE_Case_Group_Contracts</members>
+        <members>HAE_Case_Group_For_Contract_Hours</members>
         <members>HAE_Case_Group_Product_Support</members>
         <members>HAE_Case_Group_Software_Support</members>
         <members>HAE_Case_Inquiry_To_Order_Priority</members>
         <members>HAE_Case_Origin_Email_Type</members>
+        <members>HAE_Case_Priority_For_Task</members>
         <members>HAE_Case_Record_Types</members>
         <members>HAE_Case_Reopen_On_Closed_Status_Message</members>
         <members>HAE_Case_Reopen_Reason_System_Message</members>
+        <members>HAE_Case_Status_Closed</members>
+        <members>HAE_Case_Subject_for_Task</members>
         <members>HAE_Case_Team_Contracts</members>
         <members>HAE_Case_Team_Product_Support</members>
         <members>HAE_Case_Team_Software_Support</members>
+        <members>HAE_Category_Transfer</members>
         <members>HAE_Change</members>
         <members>HAE_Closed_Case_Status</members>
         <members>HAE_Common_Exception_Message</members>
+        <members>HAE_Content_Note_Limit</members>
         <members>HAE_Customer_Service</members>
         <members>HAE_Customer_Service_Claims</members>
+        <members>HAE_Customer_Service_Contracts</members>
         <members>HAE_Customer_Service_Inquiry</members>
         <members>HAE_Customer_Service_Order</members>
+        <members>HAE_Default_Contact_For_Contact_Request_Case</members>
+        <members>HAE_EmailMessage_REF_1</members>
+        <members>HAE_EmailMessage_REF_2</members>
+        <members>HAE_EmailMessage_RE_1</members>
+        <members>HAE_EmailMessage_RE_2</members>
+        <members>HAE_Encryption_Length</members>
+        <members>HAE_Encryption_Pattern</members>
         <members>HAE_Error_Message</members>
+        <members>HAE_GHXContentIntelligence_Mailbox</members>
+        <members>HAE_GHX_Record_Type_Name</members>
         <members>HAE_GX_Account_Name</members>
         <members>HAE_GX_Contact_Name</members>
         <members>HAE_GX_INTEGRATION_SERVER_EMAIL</members>
         <members>HAE_G_Fax_Kick_out</members>
         <members>HAE_In_Progress_Case_Status</members>
         <members>HAE_Incorrect_Address</members>
+        <members>HAE_LWC_Common_Success_Message</members>
+        <members>HAE_LWC_ERROR</members>
+        <members>HAE_LWC_ESCALATE</members>
         <members>HAE_LWC_Error_Title</members>
+        <members>HAE_LWC_SAVE</members>
+        <members>HAE_LWC_SUCCESS</members>
         <members>HAE_LWC_Shortwatch_Warning_Message</members>
         <members>HAE_LWC_System_Error_Message</members>
         <members>HAE_LWC_Warning_Title</members>
         <members>HAE_Missing_Paperwork</members>
         <members>HAE_New_Case_Status</members>
+        <members>HAE_No_Bill_To_Account</members>
         <members>HAE_No_Records_found</members>
+        <members>HAE_No_Related_AccountContact</members>
+        <members>HAE_OrderSNA_Mailbox</members>
+        <members>HAE_Order_Integration_Server_Email</members>
         <members>HAE_Order_Submitted_to_GHX</members>
         <members>HAE_Other</members>
         <members>HAE_PO_NUMBER_FORMAT1</members>
@@ -202,8 +257,11 @@
         <members>HAE_PO_NUMBER_FORMAT6</members>
         <members>HAE_Pending_Customer_Case_Status</members>
         <members>HAE_Pending_Internal_Case_Status</members>
+        <members>HAE_Phone_Fix</members>
         <members>HAE_Please_fill_the_required_fields</members>
         <members>HAE_Product_ANZ</members>
+        <members>HAE_Product_Attribute_API_Name</members>
+        <members>HAE_Product_Attribute_FieldSet_ProductView</members>
         <members>HAE_Product_Availability_Status</members>
         <members>HAE_Product_Business_Unit</members>
         <members>HAE_Product_Case_Height_inches</members>
@@ -219,11 +277,17 @@
         <members>HAE_Product_Substitute_Item</members>
         <members>HAE_Purchase_Order</members>
         <members>HAE_Quantity_Error</members>
+        <members>HAE_Queue</members>
         <members>HAE_Received_Case</members>
         <members>HAE_Record_Type_Update_Message</members>
         <members>HAE_Region_NA</members>
         <members>HAE_Response_Received_Case_Status</members>
         <members>HAE_Search</members>
+        <members>HAE_Ship_To</members>
+        <members>HAE_Software_Support</members>
+        <members>HAE_Standard</members>
+        <members>HAE_System</members>
+        <members>HAE_Transactional_Account</members>
         <members>HAE_Warehouse</members>
         <members>HAE_Wrong_Lot_Number</members>
         <members>HAE_Wrong_Part_Number</members>
@@ -231,6 +295,11 @@
         <name>CustomLabel</name>
     </types>
     <types>
+        <members>Auto_Forwarding_Email_Setting__mdt.EMEA_CS_DE</members>
+        <members>Auto_Forwarding_Email_Setting__mdt.EMEA_CS_FR</members>
+        <members>Auto_Forwarding_Email_Setting__mdt.EMEA_CS_IT</members>
+        <members>Auto_Forwarding_Email_Setting__mdt.EMEA_CS_UK</members>
+        <members>Auto_Forwarding_Email_Setting__mdt.NA</members>
         <members>HAE_AdditionalInfromationMapping__mdt.HAE_Claim_Incorrect_Address</members>
         <members>HAE_AdditionalInfromationMapping__mdt.HAE_Claim_Missing_Paperwork</members>
         <members>HAE_AdditionalInfromationMapping__mdt.HAE_Claim_Other</members>
@@ -256,6 +325,26 @@
         <members>HAE_AdditionalInfromationMapping__mdt.HAE_Order_Order_Submitted_to_GHX</members>
         <members>HAE_AdditionalInfromationMapping__mdt.HAE_Order_Purchase_Order</members>
         <members>HAE_AdditionalInfromationMapping__mdt.HAE_Order_Sample_Demo_Request</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_1</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_10</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_11</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_2</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_3</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_4</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_5</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_6</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_7</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_8</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt.Archive_Rule_9</members>
+        <members>HAE_Case_Category_Assignment__mdt.CustomerService_Order</members>
+        <members>HAE_Case_Creation_Settings__mdt.Claim_Recall</members>
+        <members>HAE_Case_Creation_Settings__mdt.Claim_Returns_Received</members>
+        <members>HAE_Case_Creation_Settings__mdt.Order_Booking_Hold</members>
+        <members>HAE_Case_Creation_Settings__mdt.Order_Cold_Weather_Hold</members>
+        <members>HAE_Case_Creation_Settings__mdt.Order_Contract_Request</members>
+        <members>HAE_Case_Creation_Settings__mdt.Order_Equipment_PO</members>
+        <members>HAE_Case_Creation_Settings__mdt.Order_Sample_Requests</members>
+        <members>HAE_Case_Creation_Settings__mdt.Order_Short_Watch</members>
         <members>HAE_Case_Queue_Business_Hour_Mapping__mdt.CS_ANZ_ANZ</members>
         <members>HAE_Case_Queue_Business_Hour_Mapping__mdt.CS_AT_EMEA</members>
         <members>HAE_Case_Queue_Business_Hour_Mapping__mdt.CS_BE_EMEA</members>
@@ -283,6 +372,9 @@
         <members>HAE_Case_Queue_Business_Hour_Mapping__mdt.TS_IT_EMEA</members>
         <members>HAE_Case_Queue_Business_Hour_Mapping__mdt.TS_NL_EMEA</members>
         <members>HAE_Case_Queue_Business_Hour_Mapping__mdt.TS_UK_EMEA</members>
+        <members>HAE_Credit_Card_Regex__mdt.Generic</members>
+        <members>HAE_Credit_Card_Regex__mdt.MasterCard</members>
+        <members>HAE_Credit_Card_Regex__mdt.Visa</members>
         <members>HAE_Record_Type_Change_Settings__mdt.Inquiry_To_Claim</members>
         <members>HAE_Record_Type_Change_Settings__mdt.Inquiry_To_Order</members>
         <members>HAE_Region_To_Business_Hour_Mapping__mdt.Region_ANZ_BH_ANZ</members>
@@ -291,8 +383,17 @@
         <name>CustomMetadata</name>
     </types>
     <types>
+        <members>HAE_Escalate_to_Manager_Notification</members>
+        <name>CustomNotificationType</name>
+    </types>
+    <types>
+        <members>Auto_Forwarding_Email_Setting__mdt</members>
         <members>HAE_AdditionalInfromationMapping__mdt</members>
+        <members>HAE_CS_Case_Auto_Archive_Rules__mdt</members>
+        <members>HAE_Case_Category_Assignment__mdt</members>
+        <members>HAE_Case_Creation_Settings__mdt</members>
         <members>HAE_Case_Queue_Business_Hour_Mapping__mdt</members>
+        <members>HAE_Credit_Card_Regex__mdt</members>
         <members>HAE_Record_Type_Change_Settings__mdt</members>
         <members>HAE_Region_To_Business_Hour_Mapping__mdt</members>
         <name>CustomObject</name>
@@ -301,20 +402,29 @@
         <members>HAE_Case_Product__c</members>
         <members>HAE_Category__c</members>
         <members>HAE_Operating_Unit__c</members>
+        <members>HAE_Product_Attributes__c</members>
         <members>HAE_Related_Account_Contact__c</members>
         <members>HAE_Shortwatch__c</members>
         <members>HAE_User_Operating_Unit__c</members>
         <name>CustomObject</name>
     </types>
     <types>
+        <members>HAE_Product_Attributes__c</members>
         <members>HAE_Shortwatch__c</members>
         <members>HAE_User_Operating_Unit__c</members>
         <name>CustomTab</name>
     </types>
     <types>
+        <members>Customer_Service</members>
+        <name>DataCategoryGroup</name>
+    </types>
+    <types>
         <members>HAE_Email_Templates</members>
         <members>HAE_Email_Templates/HAE_Automated_Case_Closed_Notification_To_Contact</members>
         <members>HAE_Email_Templates/HAE_Automated_Case_Closed_Notification_To_Web_Email</members>
+        <members>HAE_Email_Templates/HAE_CS_Knowledge_Approval_Assignment</members>
+        <members>HAE_Email_Templates/HAE_CS_Knowledge_article_approved</members>
+        <members>HAE_Email_Templates/HAE_CS_Knowledge_article_rejected</members>
         <members>HAE_Email_Templates/HAE_Case_Status_Change_From_New_To_InProgress_Notification_To_Contact</members>
         <members>HAE_Email_Templates/HAE_Case_Status_Change_From_New_To_InProgress_Notification_To_Web_Email</members>
         <members>HAE_Email_Templates/HAE_Manual_Case_Closed_Notification_To_Contact</members>
@@ -323,6 +433,7 @@
         <members>HAE_Email_Templates/HAE_New_Case_Transfer_Notification_To_Contact</members>
         <members>HAE_Email_Templates/HAE_New_Case_Transfer_Notification_To_Web_Email</members>
         <members>HAE_Email_Templates/HAE_New_Manual_Case_Notification</members>
+        <members>HAE_Email_Templates/HAE_Potential_SLA_Breach</members>
         <name>EmailTemplate</name>
     </types>
     <types>
@@ -354,15 +465,19 @@
         <name>FieldSet</name>
     </types>
     <types>
+        <members>Account_Record_Page</members>
         <members>Category_Record_Page2</members>
         <members>HAE_Customer_Service</members>
         <members>HAE_Customer_Service_Inquiry</members>
         <name>FlexiPage</name>
     </types>
     <types>
-		<members>HAE_Change_Case_Queue_Owner-1</members>
+        <members>HAE_Auto_Escalation_for_SLA_Breach</members>
+        <members>HAE_Case_Escalation_Notification</members>
+        <members>HAE_Change_Case_Queue_Owner-1</members>
         <members>HAE_Change_Case_Record_Type-1</members>
         <members>HAE_Customer_Service_Case_Logic-39</members>
+        <members>HAE_Customer_Service_ERF_Logic</members>
         <members>HAE_Notification_To_Contract_Request_Owner-1</members>
         <name>Flow</name>
     </types>
@@ -373,6 +488,7 @@
         <members>HAE_CS_CH</members>
         <members>HAE_CS_CZ</members>
         <members>HAE_CS_DE</members>
+        <members>HAE_CS_ERF</members>
         <members>HAE_CS_FR</members>
         <members>HAE_CS_GHXEU</members>
         <members>HAE_CS_GHXNA</members>
@@ -408,12 +524,18 @@
         <members>Account-Account Layout - EU Transactional Account</members>
         <members>Account-Account Layout - JP Transactional Account</members>
         <members>Case-HAE_Customer Service Claims Layout</members>
+        <members>Case-HAE_Customer Service Community Claims Layout</members>
+        <members>Case-HAE_Customer Service Community Inquiry Layout</members>
+        <members>Case-HAE_Customer Service Community Order Layout</members>
         <members>Case-HAE_Customer Service Contract Request</members>
+        <members>Case-HAE_Customer Service Contracts</members>
+        <members>Case-HAE_Customer Service ERF Layout</members>
         <members>Case-HAE_Customer Service GHX Layout</members>
         <members>Case-HAE_Customer Service Inquiry Layout</members>
         <members>Case-HAE_Customer Service Order Layout</members>
         <members>Case-HAE_Customer Service Service Request Layout</members>
         <members>Contact-Contact Layout</members>
+        <members>Knowledge__kav-CS Knowledge Layout</members>
         <members>Product2-HAE_Customer Service Product Layout</members>
         <members>Task-HAE Task Layout</members>
         <name>Layout</name>
@@ -428,6 +550,9 @@
         <members>hae_ChangeRecordType</members>
         <members>hae_ProductView</members>
         <members>hae_changeCaseOwner</members>
+        <members>hae_setCaseEscalation</members>
+        <members>hae_showAccountNotes</members>
+        <members>hae_showSalesReps</members>
         <name>LightningComponentBundle</name>
     </types>
     <types>
@@ -465,6 +590,7 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>CS Partner Community User</members>
         <members>Customer Service Agent</members>
         <name>Profile</name>
     </types>
@@ -475,6 +601,7 @@
         <members>HAE_CS_CH</members>
         <members>HAE_CS_CZ</members>
         <members>HAE_CS_DE</members>
+        <members>HAE_CS_ERF</members>
         <members>HAE_CS_FR</members>
         <members>HAE_CS_GHXEU</members>
         <members>HAE_CS_GHXNA</members>
@@ -503,17 +630,22 @@
         <name>Queue</name>
     </types>
     <types>
+        <members>Case.Escalate</members>
         <members>Case.HAE_Change_Owner</members>
         <members>Case.HAE_Send_Email</members>
+        <members>Case.Sales_Rep_Selection</members>
         <name>QuickAction</name>
     </types>
     <types>
         <members>Case.HAE_Customer_Service_Claims</members>
         <members>Case.HAE_Customer_Service_Contract_Request</members>
+        <members>Case.HAE_Customer_Service_Contracts</members>
+        <members>Case.HAE_Customer_Service_ERF</members>
         <members>Case.HAE_Customer_Service_GHX</members>
         <members>Case.HAE_Customer_Service_Inquiry</members>
         <members>Case.HAE_Customer_Service_Order</members>
         <members>Case.HAE_Customer_Service_Service_Request</members>
+        <members>Knowledge__kav.HAE_Customer_Service</members>
         <name>RecordType</name>
     </types>
     <types>
@@ -550,8 +682,19 @@
         <name>SharingCriteriaRule</name>
     </types>
     <types>
+        <members>Case.HAE_CS_External_Closed_To_New_Validation</members>
+        <members>Case.HAE_CS_External_Inp_To_New_Validation</members>
+        <members>Case.HAE_CS_External_Status_Validation</members>
+        <members>Case.HAE_Close_Case_Status_Validation</members>
+        <members>Case.HAE_Customer_Case_Status_Validation</members>
+        <members>Case.HAE_InProgress_Case_Status_Validation</members>
+        <members>Case.HAE_Internal_Case_Status_Validation</members>
+        <members>Case.HAE_Internal_Team_Case_Validation</members>
+        <members>Case.HAE_New_Case_Status_Validation</members>
         <members>Case.HAE_Reopen_Reason_Required</members>
-        <members>Product2.HAE_Estimated_Date_of_Recovery_Check</members>
+        <members>Case.HAE_Response_Case_Status_Validation</members>
+        <members>Case.HAE_Service_Provider_Validation</members>
+        <members>HAE_User_Operating_Unit__c.HAE_User_record_cannot_be_blank</members>
         <name>ValidationRule</name>
     </types>
     <types>

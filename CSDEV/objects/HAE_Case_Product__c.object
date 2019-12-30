@@ -230,29 +230,9 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Bottle</fullName>
+                    <fullName>Case</fullName>
                     <default>false</default>
-                    <label>Bottle</label>
-                </value>
-                <value>
-                    <fullName>Boxes</fullName>
-                    <default>false</default>
-                    <label>Boxes</label>
-                </value>
-                <value>
-                    <fullName>Cases</fullName>
-                    <default>false</default>
-                    <label>Cases</label>
-                </value>
-                <value>
-                    <fullName>Cubic Ft.</fullName>
-                    <default>false</default>
-                    <label>Cubic Ft.</label>
-                </value>
-                <value>
-                    <fullName>Dozen</fullName>
-                    <default>false</default>
-                    <label>Dozen</label>
+                    <label>Case</label>
                 </value>
                 <value>
                     <fullName>Each</fullName>
@@ -260,364 +240,460 @@
                     <label>Each</label>
                 </value>
                 <value>
-                    <fullName>Foot</fullName>
-                    <default>false</default>
-                    <label>Foot</label>
-                </value>
-                <value>
-                    <fullName>GL</fullName>
-                    <default>false</default>
-                    <label>GL</label>
-                </value>
-                <value>
-                    <fullName>Grams</fullName>
-                    <default>false</default>
-                    <label>Grams</label>
-                </value>
-                <value>
-                    <fullName>Hour</fullName>
-                    <default>false</default>
-                    <label>Hour</label>
-                </value>
-                <value>
-                    <fullName>Hours</fullName>
-                    <default>false</default>
-                    <label>Hours</label>
-                </value>
-                <value>
-                    <fullName>IN</fullName>
-                    <default>false</default>
-                    <label>IN</label>
-                </value>
-                <value>
-                    <fullName>Kg</fullName>
-                    <default>false</default>
-                    <label>Kg</label>
-                </value>
-                <value>
-                    <fullName>L</fullName>
-                    <default>false</default>
-                    <label>L</label>
-                </value>
-                <value>
-                    <fullName>LT</fullName>
-                    <default>false</default>
-                    <label>LT</label>
-                </value>
-                <value>
-                    <fullName>m</fullName>
-                    <default>false</default>
-                    <label>m</label>
-                </value>
-                <value>
-                    <fullName>Mg</fullName>
-                    <default>false</default>
-                    <label>Mg</label>
-                </value>
-                <value>
-                    <fullName>mL</fullName>
-                    <default>false</default>
-                    <label>mL</label>
-                </value>
-                <value>
-                    <fullName>Months</fullName>
-                    <default>false</default>
-                    <label>Months</label>
-                </value>
-                <value>
-                    <fullName>Ounce</fullName>
-                    <default>false</default>
-                    <label>Ounce</label>
-                </value>
-                <value>
-                    <fullName>Pack</fullName>
-                    <default>false</default>
-                    <label>Pack</label>
-                </value>
-                <value>
-                    <fullName>Pint</fullName>
-                    <default>false</default>
-                    <label>Pint</label>
-                </value>
-                <value>
-                    <fullName>Pounds</fullName>
-                    <default>false</default>
-                    <label>Pounds</label>
-                </value>
-                <value>
-                    <fullName>Quart</fullName>
-                    <default>false</default>
-                    <label>Quart</label>
-                </value>
-                <value>
-                    <fullName>Roll</fullName>
-                    <default>false</default>
-                    <label>Roll</label>
-                </value>
-                <value>
-                    <fullName>Square Feet</fullName>
-                    <default>false</default>
-                    <label>Square Feet</label>
-                </value>
-                <value>
-                    <fullName>Yard</fullName>
-                    <default>false</default>
-                    <label>Yard</label>
-                </value>
-                <value>
-                    <fullName>Year</fullName>
-                    <default>false</default>
-                    <label>Year</label>
-                </value>
-                <value>
                     <fullName>%</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>%</label>
-                </value>
-                <value>
-                    <fullName>Amount</fullName>
-                    <default>false</default>
-                    <label>Amount</label>
                 </value>
                 <value>
                     <fullName>AMT</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>AMT</label>
                 </value>
                 <value>
-                    <fullName>Bi-Weekly</fullName>
+                    <fullName>Amount</fullName>
                     <default>false</default>
-                    <label>Bi-Weekly</label>
+                    <isActive>false</isActive>
+                    <label>Amount</label>
                 </value>
                 <value>
                     <fullName>BOT</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>BOT</label>
                 </value>
                 <value>
                     <fullName>BWK</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>BWK</label>
+                </value>
+                <value>
+                    <fullName>Bi-Weekly</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Bi-Weekly</label>
+                </value>
+                <value>
+                    <fullName>Bottle</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Bottle</label>
+                </value>
+                <value>
+                    <fullName>Boxes</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Boxes</label>
                 </value>
                 <value>
                     <fullName>C</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>C</label>
                 </value>
                 <value>
                     <fullName>Ca</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Ca</label>
                 </value>
                 <value>
-                    <fullName>Case</fullName>
+                    <fullName>Cases</fullName>
                     <default>false</default>
-                    <label>Case</label>
+                    <isActive>false</isActive>
+                    <label>Cases</label>
                 </value>
                 <value>
                     <fullName>Celsius</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Celsius</label>
                 </value>
                 <value>
                     <fullName>Cs</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Cs</label>
+                </value>
+                <value>
+                    <fullName>Cubic Ft.</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Cubic Ft.</label>
+                </value>
+                <value>
+                    <fullName>DO</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>DO</label>
                 </value>
                 <value>
                     <fullName>Day</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Day</label>
                 </value>
                 <value>
                     <fullName>Day.</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Day.</label>
                 </value>
                 <value>
-                    <fullName>DO</fullName>
+                    <fullName>Dozen</fullName>
                     <default>false</default>
-                    <label>DO</label>
+                    <isActive>false</isActive>
+                    <label>Dozen</label>
                 </value>
                 <value>
                     <fullName>Ea</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Ea</label>
+                </value>
+                <value>
+                    <fullName>Foot</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Foot</label>
                 </value>
                 <value>
                     <fullName>Ft</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Ft</label>
                 </value>
                 <value>
                     <fullName>Ft2</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Ft2</label>
+                </value>
+                <value>
+                    <fullName>GL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>GL</label>
                 </value>
                 <value>
                     <fullName>Gallon (U.S.)</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Gallon (U.S.)</label>
                 </value>
                 <value>
-                    <fullName>Half Yearly</fullName>
+                    <fullName>Grams</fullName>
                     <default>false</default>
-                    <label>Half Yearly</label>
-                </value>
-                <value>
-                    <fullName>Hr</fullName>
-                    <default>false</default>
-                    <label>Hr</label>
+                    <isActive>false</isActive>
+                    <label>Grams</label>
                 </value>
                 <value>
                     <fullName>HYR</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>HYR</label>
+                </value>
+                <value>
+                    <fullName>Half Yearly</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Half Yearly</label>
+                </value>
+                <value>
+                    <fullName>Hour</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Hour</label>
+                </value>
+                <value>
+                    <fullName>Hours</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Hours</label>
+                </value>
+                <value>
+                    <fullName>Hr</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Hr</label>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>IU</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>IU</label>
                 </value>
                 <value>
                     <fullName>Inches</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Inches</label>
                 </value>
                 <value>
                     <fullName>International Unit</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>International Unit</label>
                 </value>
                 <value>
-                    <fullName>IU</fullName>
+                    <fullName>Kg</fullName>
                     <default>false</default>
-                    <label>IU</label>
+                    <isActive>false</isActive>
+                    <label>Kg</label>
                 </value>
                 <value>
                     <fullName>Kilometers</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Kilometers</label>
                 </value>
                 <value>
                     <fullName>Km</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Km</label>
                 </value>
                 <value>
                     <fullName>Km (Kilometers)</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Km (Kilometers)</label>
+                </value>
+                <value>
+                    <fullName>L</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>L</label>
+                </value>
+                <value>
+                    <fullName>LT</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>LT</label>
                 </value>
                 <value>
                     <fullName>Meter</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Meter</label>
+                </value>
+                <value>
+                    <fullName>Mg</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Mg</label>
                 </value>
                 <value>
                     <fullName>Mi</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Mi</label>
                 </value>
                 <value>
                     <fullName>Mi (Miles)</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Mi (Miles)</label>
                 </value>
                 <value>
                     <fullName>Miles</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Miles</label>
                 </value>
                 <value>
                     <fullName>Min</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Min</label>
                 </value>
                 <value>
                     <fullName>Minute</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Minute</label>
                 </value>
                 <value>
                     <fullName>Month</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Month</label>
+                </value>
+                <value>
+                    <fullName>Months</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Months</label>
                 </value>
                 <value>
                     <fullName>Mth</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Mth</label>
+                </value>
+                <value>
+                    <fullName>Ounce</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Ounce</label>
                 </value>
                 <value>
                     <fullName>PAK</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>PAK</label>
                 </value>
                 <value>
                     <fullName>PAL</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>PAL</label>
+                </value>
+                <value>
+                    <fullName>Pack</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pack</label>
                 </value>
                 <value>
                     <fullName>Pallet</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Pallet</label>
+                </value>
+                <value>
+                    <fullName>Pint</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pint</label>
+                </value>
+                <value>
+                    <fullName>Pounds</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pounds</label>
                 </value>
                 <value>
                     <fullName>Qtr</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Qtr</label>
+                </value>
+                <value>
+                    <fullName>Quart</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Quart</label>
                 </value>
                 <value>
                     <fullName>Quarter</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Quarter</label>
                 </value>
                 <value>
                     <fullName>Quarterly</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Quarterly</label>
                 </value>
                 <value>
                     <fullName>ROL</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>ROL</label>
+                </value>
+                <value>
+                    <fullName>Roll</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Roll</label>
+                </value>
+                <value>
+                    <fullName>Square Feet</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Square Feet</label>
                 </value>
                 <value>
                     <fullName>US Dollars</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>US Dollars</label>
                 </value>
                 <value>
                     <fullName>USD</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>USD</label>
                 </value>
                 <value>
                     <fullName>Week</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Week</label>
                 </value>
                 <value>
                     <fullName>Weekly</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Weekly</label>
                 </value>
                 <value>
                     <fullName>Wk</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>Wk</label>
                 </value>
                 <value>
                     <fullName>YD</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>YD</label>
-                </value>
-                <value>
-                    <fullName>Yearly</fullName>
-                    <default>false</default>
-                    <label>Yearly</label>
                 </value>
                 <value>
                     <fullName>YR</fullName>
                     <default>false</default>
+                    <isActive>false</isActive>
                     <label>YR</label>
+                </value>
+                <value>
+                    <fullName>Yard</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Yard</label>
+                </value>
+                <value>
+                    <fullName>Year</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Year</label>
+                </value>
+                <value>
+                    <fullName>Yearly</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Yearly</label>
+                </value>
+                <value>
+                    <fullName>m</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>m</label>
+                </value>
+                <value>
+                    <fullName>mL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>mL</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

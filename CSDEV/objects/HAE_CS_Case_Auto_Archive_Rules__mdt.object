@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>HAE: It&apos;s responsible to define auto archival logic for closed case.</description>
+    <fields>
+        <fullName>HAE_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>HAE: it holds active state.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HAE_Auto_Archive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>HAE: case will be closed if this checkbox has been checked and subject is blank.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Case will be auto closed if this checkbox has been checked and the Subject is blank.</inlineHelpText>
+        <label>Auto Archive</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Group__c</fullName>
+        <description>HAE: defines the case group.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>It defines the case group of &apos;to address&apos;.</inlineHelpText>
+        <label>Case Group</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CS NA</fullName>
+                    <default>true</default>
+                    <label>CS NA</label>
+                </value>
+                <value>
+                    <fullName>CS Orders NA</fullName>
+                    <default>false</default>
+                    <label>CS Orders NA</label>
+                </value>
+                <value>
+                    <fullName>CS UK</fullName>
+                    <default>false</default>
+                    <label>CS UK</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HAE_From_Email_Address__c</fullName>
+        <description>HAE: It contains from email address.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>From Email Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Subject__c</fullName>
+        <description>HAe: contains sample subject of the email.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Subject</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <label>CS Case Auto Archive Rules</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>HAE_Active__c</columns>
+        <columns>HAE_From_Email_Address__c</columns>
+        <columns>HAE_Subject__c</columns>
+        <columns>HAE_Case_Group__c</columns>
+        <columns>HAE_Auto_Archive__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>CS Case Auto Archive Rules</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

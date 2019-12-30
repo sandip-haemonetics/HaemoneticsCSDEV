@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>HAE: To map case region and case group with mailboxes.</description>
+    <fields>
+        <fullName>HAE_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>HAE: This field denotes if the current record is active or not.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Group_Name__c</fullName>
+        <description>HAE: This field denotes the case group.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Group Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Region__c</fullName>
+        <description>HAE: This field denotes the case region.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Region</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Outgoing_Mailbox__c</fullName>
+        <description>HAE: This field denotes the outgoing mailbox.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Outgoing Mailbox</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Auto-Forwarding Email Setting</label>
+    <pluralLabel>Auto-Forwarding Email Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

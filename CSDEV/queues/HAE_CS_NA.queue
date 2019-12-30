@@ -6,9 +6,6 @@
         <publicGroups>
             <publicGroup>HAE_CS_NA</publicGroup>
         </publicGroups>
-        <users>
-            <user>sandip.roy2@cognizant.com.csdev</user>
-        </users>
     </queueMembers>
     <queueRoutingConfig>CS_NA_Routing</queueRoutingConfig>
     <queueSobject>

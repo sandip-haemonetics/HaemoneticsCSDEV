@@ -8,12 +8,17 @@ import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import userId from '@salesforce/user/Id';
 import getGroupMembers from "@salesforce/apex/HAE_CaseQueueMemberSelectionController.getGroupMembers";
 import CASE_CLOSED_STATUS from '@salesforce/label/c.HAE_Closed_Case_Status';
+import HAE_LWC_SUCCESS from '@salesforce/label/c.HAE_LWC_SUCCESS';
+import HAE_LWC_ERROR from '@salesforce/label/c.HAE_LWC_ERROR';
+import HAE_LWC_SUCCESS_MSG from '@salesforce/label/c.HAE_LWC_Common_Success_Message';
+import HAE_LWC_SAVE from '@salesforce/label/c.HAE_LWC_SAVE';
 
 export default class HAE_changeCaseOwner extends LightningElement {
 
     @api recordId;
     userId = userId;
     selectedUserId;
+    saveButtonLabel = HAE_LWC_SAVE;
 
     @wire(getRecord,{recordId: '$recordId', fields: CASE_STATUS}) caseObj;
     
@@ -29,7 +34,6 @@ export default class HAE_changeCaseOwner extends LightningElement {
 
     handleChange(event) {
         this.selectedUserId = event.detail.value;
-        console.log('value-->'+this.selectedUserId);
     }
 
     updateCase(){
@@ -41,8 +45,8 @@ export default class HAE_changeCaseOwner extends LightningElement {
             .then(()=> {
                 this.dispatchEvent(
                     new ShowToastEvent({
-                        title: 'Success',
-                        message: 'Updated Case',
+                        title: HAE_LWC_SUCCESS,
+                        message: HAE_LWC_SUCCESS_MSG,
                         variant: 'success',
                     }),
                 );
@@ -50,7 +54,7 @@ export default class HAE_changeCaseOwner extends LightningElement {
             .catch(error => {
                 this.dispatchEvent(
                     new ShowToastEvent({
-                        title: 'Error creating record',
+                        title: HAE_LWC_ERROR,
                         message: error.body.message,//error.body.output.fieldErrors,
                         variant: 'error',
                     }),

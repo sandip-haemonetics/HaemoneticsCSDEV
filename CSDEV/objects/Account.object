@@ -26,6 +26,17 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>HAE_Region__c</fullName>
+        <description>HAE: This field denotes the assciated region from Operating Unit.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(HAE_Operating_Unit__r.Region__c)</formula>
+        <label>Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>HAE_VIP_Customer__c</fullName>
         <defaultValue>false</defaultValue>
         <description>HAE: This flag is responsible to decide VIP customer.</description>

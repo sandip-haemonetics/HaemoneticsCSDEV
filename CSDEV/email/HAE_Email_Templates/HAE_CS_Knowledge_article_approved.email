@@ -1,0 +1,9 @@
+Dear {!ApprovalRequest.Process_Assignee},
+
+The Knowledge article that you submitted for approval has been approved with the following comments:
+{!ApprovalRequest.Comments}
+
+Knowledge Article number: {!Knowledge__kav.ArticleNumber} 
+Knowledge Article title: {!Knowledge__kav.Title} 
+
+Best Regards

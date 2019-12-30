@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>HAE_Content_Description__c</fullName>
+        <description>HAE: defines Content Description for Knowledge Article.</description>
+        <externalId>false</externalId>
+        <label>Content Description</label>
+        <length>32768</length>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>HAE_Products_s__c</fullName>
+        <description>HAE: Products are defined for CS Knowledge Page Layout</description>
+        <externalId>false</externalId>
+        <label>Products(s)</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACP215</fullName>
+                    <default>false</default>
+                    <label>ACP215</label>
+                </value>
+                <value>
+                    <fullName>CS 5</fullName>
+                    <default>false</default>
+                    <label>CS 5</label>
+                </value>
+                <value>
+                    <fullName>CS 5+</fullName>
+                    <default>false</default>
+                    <label>CS 5+</label>
+                </value>
+                <value>
+                    <fullName>CS Elite</fullName>
+                    <default>false</default>
+                    <label>CS Elite</label>
+                </value>
+                <value>
+                    <fullName>CS Elite+</fullName>
+                    <default>false</default>
+                    <label>CS Elite+</label>
+                </value>
+                <value>
+                    <fullName>Harmony</fullName>
+                    <default>false</default>
+                    <label>Harmony</label>
+                </value>
+                <value>
+                    <fullName>MCS+</fullName>
+                    <default>false</default>
+                    <label>MCS+</label>
+                </value>
+                <value>
+                    <fullName>NexSys PCS</fullName>
+                    <default>false</default>
+                    <label>NexSys PCS</label>
+                </value>
+                <value>
+                    <fullName>OrthoPat</fullName>
+                    <default>false</default>
+                    <label>OrthoPat</label>
+                </value>
+                <value>
+                    <fullName>PCS2</fullName>
+                    <default>false</default>
+                    <label>PCS2</label>
+                </value>
+                <value>
+                    <fullName>TEG5000</fullName>
+                    <default>false</default>
+                    <label>TEG5000</label>
+                </value>
+                <value>
+                    <fullName>TEG6s</fullName>
+                    <default>false</default>
+                    <label>TEG6s</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>HAE_Region__c</fullName>
+        <description>HAE: It specifies the article belongs to the region.</description>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+                <value>
+                    <fullName>ANZ</fullName>
+                    <default>false</default>
+                    <label>ANZ</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HAE_Type__c</fullName>
+        <description>HAE: denotes type of knowledge article.</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>General Article</fullName>
+                    <default>false</default>
+                    <label>General Article</label>
+                </value>
+                <value>
+                    <fullName>Instructions</fullName>
+                    <default>false</default>
+                    <label>Instructions</label>
+                </value>
+                <value>
+                    <fullName>Product Information</fullName>
+                    <default>false</default>
+                    <label>Product Information</label>
+                </value>
+                <value>
+                    <fullName>Template</fullName>
+                    <default>false</default>
+                    <label>Template</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <recordTypes>
+        <fullName>HAE_Customer_Service</fullName>
+        <active>true</active>
+        <description>HAE: Only CS Knowledge Articles would be considered.</description>
+        <label>Customer Service</label>
+        <picklistValues>
+            <picklist>HAE_Products_s__c</picklist>
+            <values>
+                <fullName>ACP215</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CS 5%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CS Elite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CS Elite%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Harmony</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MCS%2B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NexSys PCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OrthoPat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCS2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEG5000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEG6s</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HAE_Region__c</picklist>
+            <values>
+                <fullName>ANZ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HAE_Type__c</picklist>
+            <values>
+                <fullName>General Article</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Template</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

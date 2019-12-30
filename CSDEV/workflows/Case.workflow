@@ -156,6 +156,17 @@
         <template>HAE_Email_Templates/HAE_New_Manual_Case_Notification</template>
     </alerts>
     <alerts>
+        <fullName>HAE_Potential_SLA_Breach_Email_Alert</fullName>
+        <description>HAE Potential SLA Breach Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Owner_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>HAE_Email_Templates/HAE_Potential_SLA_Breach</template>
+    </alerts>
+    <alerts>
         <fullName>New_Case_Notification_BloodTrack</fullName>
         <description>New Case Notification BloodTrack</description>
         <protected>false</protected>
@@ -466,6 +477,17 @@ RecordType.Name + &quot; for Account: &quot; + Account.Name
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HAE_Update_ERF_Case_Owner</fullName>
+        <description>HAE: It will update the ERF Case owner to CS ERF.</description>
+        <field>OwnerId</field>
+        <lookupValue>HAE_CS_ERF</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Update ERF Case Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Jira_Submission</fullName>
@@ -795,6 +817,15 @@ RecordType.Name + &quot; for Account: &quot; + Account.Name
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Region</fullName>
+        <description>Update Region with Region 2</description>
+        <field>HAE_Region__c</field>
+        <name>Update Region</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Reopened_Days</fullName>
         <field>Days_in_Reopened__c</field>
         <formula>IF( ISBLANK ( PRIORVALUE(  Days_in_Reopened__c )),0,PRIORVALUE( Days_in_Reopened__c ))+ (NOW() -  TimeStamp_Reopened__c )</formula>
@@ -1106,6 +1137,17 @@ RecordType.Name + &quot; for Account: &quot; + Account.Name
             <timeLength>45</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>HAE%3A Update Region picklist with Region formula</fullName>
+        <actions>
+            <name>Update_Region</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Used to update picklist with formula to drive dependency</description>
+        <formula>TRUE</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>Is Complaint Record Type</fullName>

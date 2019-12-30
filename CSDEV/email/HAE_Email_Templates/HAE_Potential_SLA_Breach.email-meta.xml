@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>HAE:This template is responsible to send notification to the manager of the case owner</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>HAE Potential SLA Breach</name>
+    <style>none</style>
+    <subject>Potential SLA Breach</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

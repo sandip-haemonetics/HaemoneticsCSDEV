@@ -1,0 +1,10 @@
+Dear Knowledge Approver,
+
+A knowledge Article has been assigned to you for review and approval.
+
+Knowledge Article number: {!Knowledge__kav.ArticleNumber} 
+Knowledge Article title: {!Knowledge__kav.Title} 
+
+Please review the article at your earliest convenience.
+
+Best Regards

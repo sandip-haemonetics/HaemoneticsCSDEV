@@ -1,7 +1,7 @@
 /**
-    Name: HAE_UserOperatingUnitTriggerHandler
-    Description: This class is responsible to create Operating Unit Share records as well as account team member records
-    Date: 11/12
+    @name: HAE_UserOperatingUnitTriggerHandler
+    @description: This class is responsible to create Operating Unit Share records as well as account team member records
+    @date: 11/12
 **/
 
 public with sharing class HAE_UserOperatingUnitTriggerHandler {

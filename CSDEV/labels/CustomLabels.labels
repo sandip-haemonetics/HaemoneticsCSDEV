@@ -15,6 +15,14 @@
         <value>Additional Fields</value>
     </labels>
     <labels>
+        <fullName>HAE_Bill_To</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bill To</shortDescription>
+        <value>Bill To</value>
+    </labels>
+    <labels>
         <fullName>HAE_CASE_PRIORITY_HIGH</fullName>
         <categories>HAE</categories>
         <language>en_US</language>
@@ -38,6 +46,46 @@
         <value>Medium</value>
     </labels>
     <labels>
+        <fullName>HAE_CS_CR_Default_Category</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE CS CR Default Category</shortDescription>
+        <value>Contract Request</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CS_CR_Default_Status</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE CS CR Default Status</shortDescription>
+        <value>Open</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CS_Contract_Request_Record_Type_Name</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Contract Request Record Type Name</shortDescription>
+        <value>Customer Service: Contract Request</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CS_ContractsCaseValidationMsg</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_CS_ContractsCaseValidationMsg</shortDescription>
+        <value>You cannot create a case with Customer Service: Contracts record type.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_CS_Contracts_Record_Type_Name</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Contracts Record Type Name</shortDescription>
+        <value>Customer Service: Contracts</value>
+    </labels>
+    <labels>
         <fullName>HAE_CS_NA</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -52,6 +100,29 @@
         <value>CS Orders NA</value>
     </labels>
     <labels>
+        <fullName>HAE_Case_Category_Credit_Request</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE Case Category Credit Request</shortDescription>
+        <value>Credit Request</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Category_Order_Submitted_to_GHX</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Category Order Submitted to GHX</shortDescription>
+        <value>Order Submitted to GHX</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Category_Status_For_Contract_Hours</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Category Status For  Contract Hours</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
         <fullName>HAE_Case_Group_CS_NA</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -64,6 +135,13 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>HAE_Case_Group_Contracts</shortDescription>
+        <value>Contracts</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Group_For_Contract_Hours</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Group For Contract Hours</shortDescription>
         <value>Contracts</value>
     </labels>
     <labels>
@@ -98,6 +176,14 @@
         <value>Email</value>
     </labels>
     <labels>
+        <fullName>HAE_Case_Priority_For_Task</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE Case Priority For Task</shortDescription>
+        <value>High</value>
+    </labels>
+    <labels>
         <fullName>HAE_Case_Record_Types</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -119,6 +205,22 @@
         <protected>false</protected>
         <shortDescription>HAE_Case_Reopen_Reason_System_Message</shortDescription>
         <value>Response received from customer.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Status_Closed</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE Case Status Closed</shortDescription>
+        <value>Closed</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Case_Subject_for_Task</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE Case Subject for Task</shortDescription>
+        <value>Please check and send a credit memo to this customer</value>
     </labels>
     <labels>
         <fullName>HAE_Case_Team_Contracts</fullName>
@@ -145,6 +247,14 @@
         <value>Software Support</value>
     </labels>
     <labels>
+        <fullName>HAE_Category_Transfer</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Category_Transfer</shortDescription>
+        <value>Transfer</value>
+    </labels>
+    <labels>
         <fullName>HAE_Change</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -168,6 +278,14 @@
         <value>Exception :</value>
     </labels>
     <labels>
+        <fullName>HAE_Content_Note_Limit</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE_Content_Note_Limit</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
         <fullName>HAE_Customer_Service</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -180,6 +298,14 @@
         <protected>false</protected>
         <shortDescription>Customer Service: Claims</shortDescription>
         <value>Customer Service: Claims</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Customer_Service_Contracts</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Service Contracts</shortDescription>
+        <value>HAE_Customer_Service_Contracts</value>
     </labels>
     <labels>
         <fullName>HAE_Customer_Service_Inquiry</fullName>
@@ -196,11 +322,81 @@
         <value>Customer Service: Order</value>
     </labels>
     <labels>
+        <fullName>HAE_Default_Contact_For_Contact_Request_Case</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE Default Contact For Contact Request Case</shortDescription>
+        <value>test user</value>
+    </labels>
+    <labels>
+        <fullName>HAE_EmailMessage_REF_1</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE EmailMessage REF 1</shortDescription>
+        <value>ref:</value>
+    </labels>
+    <labels>
+        <fullName>HAE_EmailMessage_REF_2</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE EmailMessage REF 2</shortDescription>
+        <value>:ref</value>
+    </labels>
+    <labels>
+        <fullName>HAE_EmailMessage_RE_1</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE EmailMessage RE 1</shortDescription>
+        <value>RE:</value>
+    </labels>
+    <labels>
+        <fullName>HAE_EmailMessage_RE_2</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE EmailMessage RE 2</shortDescription>
+        <value>Re:</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Encryption_Length</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Encryption Length</shortDescription>
+        <value>8</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Encryption_Pattern</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Encryption Pattern</shortDescription>
+        <value>*</value>
+    </labels>
+    <labels>
         <fullName>HAE_Error_Message</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Error Message</shortDescription>
         <value>Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_GHXContentIntelligence_Mailbox</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GHXContentIntelligence Mailbox</shortDescription>
+        <value>GHXContentIntelligence@ghx.com</value>
+    </labels>
+    <labels>
+        <fullName>HAE_GHX_Record_Type_Name</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GHX Record Type Name</shortDescription>
+        <value>Customer Service: GHX</value>
     </labels>
     <labels>
         <fullName>HAE_GX_Account_Name</fullName>
@@ -222,7 +418,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>GX_INTEGRATION_SERVER_EMAIL</shortDescription>
-        <value>Integration-Server@HAEWEBMMT101.haemo.net,santanu.pal@cognizant.com, Sulekha.Kumari2@cognizant.com</value>
+        <value>Integration-Server@HAEWEBMMT101.haemo.net,sulekha.kumari2@cognizant.com,aniket.aroskar@haemonetics.com,noreply@ghx.com,nabin.chattaraj@cognizant.com,shreeja.chatterjee@cognizant.com,lzimmerman@haemonetics.com,lichu.chen@haemonetics.com,santanu.pal@cognizant.com,carol.chen@haemonetics.com,GHXContentIntelligence@ghx.com</value>
     </labels>
     <labels>
         <fullName>HAE_G_Fax_Kick_out</fullName>
@@ -247,12 +443,51 @@
         <value>Incorrect Address</value>
     </labels>
     <labels>
+        <fullName>HAE_LWC_Common_Success_Message</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE LWC Common Success Message</shortDescription>
+        <value>Record has been updated.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_LWC_ERROR</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE LWC ERROR</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>HAE_LWC_ESCALATE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE LWC ESCALATE</shortDescription>
+        <value>Escalate</value>
+    </labels>
+    <labels>
         <fullName>HAE_LWC_Error_Title</fullName>
         <categories>HAE LWC</categories>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>LWC Error Title</shortDescription>
         <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>HAE_LWC_SAVE</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE LWC SAVE</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>HAE_LWC_SUCCESS</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE LWC SUCCESS</shortDescription>
+        <value>Success</value>
     </labels>
     <labels>
         <fullName>HAE_LWC_Shortwatch_Warning_Message</fullName>
@@ -294,11 +529,43 @@
         <value>New</value>
     </labels>
     <labels>
+        <fullName>HAE_No_Bill_To_Account</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE No Bill To Account</shortDescription>
+        <value>Respective Contact is not associated with the Bill To Account.</value>
+    </labels>
+    <labels>
         <fullName>HAE_No_Records_found</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>No Records found</shortDescription>
         <value>No records found.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_No_Related_AccountContact</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE No Related AccountContact</shortDescription>
+        <value>There is no Related Account Contact relationship for the current Contact.</value>
+    </labels>
+    <labels>
+        <fullName>HAE_OrderSNA_Mailbox</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OrderSNA Mailbox</shortDescription>
+        <value>OrderSNA.test@haemonetics.com</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Order_Integration_Server_Email</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HAE Order Integration Server Email</shortDescription>
+        <value>santanu.pal@cognizant.com, lzimmerman@haemonetics.com</value>
     </labels>
     <labels>
         <fullName>HAE_Order_Submitted_to_GHX</fullName>
@@ -376,6 +643,14 @@
         <value>Pending Internal</value>
     </labels>
     <labels>
+        <fullName>HAE_Phone_Fix</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Phone Fix</shortDescription>
+        <value>Phone_Fix</value>
+    </labels>
+    <labels>
         <fullName>HAE_Please_fill_the_required_fields</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -388,6 +663,20 @@
         <protected>false</protected>
         <shortDescription>Product ANZ</shortDescription>
         <value>Product ANZ</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Attribute_API_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Attribute API Name</shortDescription>
+        <value>HAE_Product_Attributes__c</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Product_Attribute_FieldSet_ProductView</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Attribute FieldSet-ProductView</shortDescription>
+        <value>HAE_CS_ProductView</value>
     </labels>
     <labels>
         <fullName>HAE_Product_Availability_Status</fullName>
@@ -408,7 +697,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Product_Case_Height_inches</shortDescription>
-        <value>HAE_Case_Height_inches__c</value>
+        <value>HAE_Case_Height__c</value>
     </labels>
     <labels>
         <fullName>HAE_Product_Case_Length_inches</fullName>
@@ -429,7 +718,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Product_Case_Width_inches</shortDescription>
-        <value>HAE_Case_Width_inches__c</value>
+        <value>HAE_Case_Width__c</value>
     </labels>
     <labels>
         <fullName>HAE_Product_EMEA</fullName>
@@ -471,7 +760,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Product_Status</shortDescription>
-        <value>Status__c</value>
+        <value>HAE_Item_Status__c</value>
     </labels>
     <labels>
         <fullName>HAE_Product_Substitute_Item</fullName>
@@ -493,6 +782,14 @@
         <protected>false</protected>
         <shortDescription>Quantity Error</shortDescription>
         <value>Quantity Error</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Queue</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Queue</shortDescription>
+        <value>Queue</value>
     </labels>
     <labels>
         <fullName>HAE_Received_Case</fullName>
@@ -531,6 +828,46 @@
         <protected>false</protected>
         <shortDescription>Search</shortDescription>
         <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Ship_To</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ship To</shortDescription>
+        <value>Ship To</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Software_Support</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Software Support</shortDescription>
+        <value>Software_Support</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Standard</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Standard</shortDescription>
+        <value>Standard</value>
+    </labels>
+    <labels>
+        <fullName>HAE_System</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System</shortDescription>
+        <value>System</value>
+    </labels>
+    <labels>
+        <fullName>HAE_Transactional_Account</fullName>
+        <categories>HAE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transactional Account</shortDescription>
+        <value>Transactional_Account</value>
     </labels>
     <labels>
         <fullName>HAE_Warehouse</fullName>

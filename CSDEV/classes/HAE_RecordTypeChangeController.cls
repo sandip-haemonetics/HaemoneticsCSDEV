@@ -1,15 +1,15 @@
 /**
-* Name			:	HAE_RecordTypeChangeController
-* Date			:	11/7/2019
-* Description	:	This is the controller class for HaeChangeRecordType LWC	
+    @name:HAE_RecordTypeChangeController 
+    @description:This is the controller class for HaeChangeRecordType LWC	
+    @date:11/7/2019
 */
 public class HAE_RecordTypeChangeController {    
     /**
-	* Name			:	fetchRecordTypeChangeInfo
-	* Param			: 	String: ObjectAPI name
-	* Return		:   List of HAE_Record_Type_Change_Settings__mdt
-	* Description	:	This method returns list of HAE_Record_Type_Change_Settings__mdt
-	*/     
+	    @name:fetchRecordTypeChangeInfo
+	    @param: String: ObjectAPI name
+	    @return:List of HAE_Record_Type_Change_Settings__mdt
+	    @description:This method returns list of HAE_Record_Type_Change_Settings__mdt
+	*/      
     @AuraEnabled(cacheable=true)
     public static Map<String,String> fetchRecordTypeChangeInfo(String objectAPIName){        
         List<String> activeRecordTypes = new List<String>();      

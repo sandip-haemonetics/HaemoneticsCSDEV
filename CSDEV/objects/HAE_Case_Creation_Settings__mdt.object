@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>HAE: To map search key of mail subject to case record types for auto case creation.</description>
+    <fields>
+        <fullName>HAE_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>HAE: This field denotes if the current record is active or not.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Category_Value__c</fullName>
+        <description>HAE: This field is used to set the case category value.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Category Value</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Group__c</fullName>
+        <description>HAE: This field denotes the case group to assign.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Group</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Owner__c</fullName>
+        <description>HAE: This field denotes the owner to assign to the case.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Priority__c</fullName>
+        <description>HAE: This field denotes the case priority to assign.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Priority</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Case_Record_Type__c</fullName>
+        <description>HAE: This field denotes the record type of the case to assign.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Case Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HAE_Search_Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>HAE: This field is used to search the case subject with the search key value</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Search Key</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Case Creation Setting</label>
+    <listViews>
+        <fullName>HAE_View</fullName>
+        <columns>DeveloperName</columns>
+        <columns>HAE_Active__c</columns>
+        <columns>HAE_Case_Category_Value__c</columns>
+        <columns>HAE_Case_Group__c</columns>
+        <columns>HAE_Case_Owner__c</columns>
+        <columns>HAE_Case_Priority__c</columns>
+        <columns>HAE_Case_Record_Type__c</columns>
+        <columns>HAE_Search_Key__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>HAE_View</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Case Creation Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

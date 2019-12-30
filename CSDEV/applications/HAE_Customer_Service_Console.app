@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
-        <logo>Haemonetics300x73</logo>
-        <logoVersion>1</logoVersion>
-        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
     <description>HAE: Customer Service Console Application</description>
     <formFactors>Large</formFactors>
@@ -19,6 +26,132 @@
         <pageOrSobjectType>Case</pageOrSobjectType>
         <recordType>Case.HAE_Customer_Service_Claims</recordType>
         <type>Flexipage</type>
+        <profile>CS Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Contract_Request</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Contract_Request</recordType>
+        <type>Flexipage</type>
+        <profile>CS Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Contract_Request</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Service Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Contracts</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Contracts</recordType>
+        <type>Flexipage</type>
+        <profile>CS Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Contracts</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Service Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_ERF</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_ERF</recordType>
+        <type>Flexipage</type>
+        <profile>CS Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_ERF</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Service Agent</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_GHX</recordType>
+        <type>Flexipage</type>
+        <profile>CS Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Inquiry</recordType>
+        <type>Flexipage</type>
+        <profile>CS Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Order</recordType>
+        <type>Flexipage</type>
+        <profile>CS Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Service_Request</recordType>
+        <type>Flexipage</type>
+        <profile>CS Partner Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>HAE_Customer_Service</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.HAE_Customer_Service_Claims</recordType>
+        <type>Flexipage</type>
         <profile>Customer Service Agent</profile>
     </profileActionOverrides>
     <profileActionOverrides>
@@ -50,7 +183,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>HAE_Customer_Service_Inquiry</content>
+        <content>HAE_Customer_Service</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Case</pageOrSobjectType>
         <recordType>Case.HAE_Customer_Service_Inquiry</recordType>
@@ -59,7 +192,7 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>HAE_Customer_Service_Inquiry</content>
+        <content>HAE_Customer_Service</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Case</pageOrSobjectType>
         <recordType>Case.HAE_Customer_Service_Inquiry</recordType>
@@ -103,19 +236,28 @@
         <profile>Admin</profile>
     </profileActionOverrides>
     <setupExperience>service</setupExperience>
+    <tabs>standard-home</tabs>
     <tabs>standard-Case</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>HAE_User_Operating_Unit__c</tabs>
     <tabs>HAE_Shortwatch__c</tabs>
+    <tabs>HAE_Product_Attributes__c</tabs>
+    <tabs>Knowledge__kav</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Customer_Service_Console_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>HAE_Product_Attributes__c</tab>
+        </mappings>
         <mappings>
             <tab>HAE_Shortwatch__c</tab>
         </mappings>
         <mappings>
             <tab>HAE_User_Operating_Unit__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Knowledge__kav</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>
@@ -126,6 +268,9 @@
         <mappings>
             <fieldName>AccountId</fieldName>
             <tab>standard-Contact</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-home</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>

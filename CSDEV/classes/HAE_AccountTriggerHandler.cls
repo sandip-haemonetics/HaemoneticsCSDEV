@@ -1,7 +1,7 @@
 /**
-    Name: HAE_AccountTriggerHandler
-    Description: This class is responsible to create/update account team member records based on operating unit
-    Date: 11/12
+    @name: HAE_AccountTriggerHandler
+    @description: This class is responsible to create/update account team member records based on operating unit
+    @date: 11/12
 **/
 
 public with sharing class HAE_AccountTriggerHandler {

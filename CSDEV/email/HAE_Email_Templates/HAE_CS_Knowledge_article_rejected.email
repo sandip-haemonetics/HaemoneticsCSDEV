@@ -1,0 +1,11 @@
+Dear {!ApprovalRequest.Process_Assignee}, 
+
+The Knowledge article  that you submitted for approval has been rejected with the following comments: 
+{!ApprovalRequest.Comments}
+
+Knowledge Article number: {!Knowledge__kav.ArticleNumber} 
+Knowledge Article title: {!Knowledge__kav.Title} 
+
+Please review the article and resubmit for approval at your earliest convenience. 
+
+Best Regards
